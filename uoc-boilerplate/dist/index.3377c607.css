@@ -4,15 +4,82 @@
 
 body {
   color: #000078;
-  background-color: #f0f0f0;
+  background-color: #d5faff;
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   font-size: 16px;
   line-height: 24px;
   display: flex;
+}
+
+.container img {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.slider {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0%;
+  overflow: hidden;
+}
+
+.slider ul {
+  width: 300%;
+  padding: 0;
+  animation: 30s infinite canvi;
+  display: flex;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 100%;
+  margin-right: 20px;
+}
+
+#img_1, #img_2, #img_3, #img_3, #img_3 {
+  object-fit: cover;
+}
+
+@keyframes canvi {
+  0% {
+    margin-left: 0;
+  }
+
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+
+  70% {
+    margin-left: -200%;
+  }
+}
+
+body {
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 header {

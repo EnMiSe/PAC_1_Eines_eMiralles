@@ -1,3 +1,7 @@
+/*------------------------------------*\
+  #GENERAL
+\*------------------------------------*/
+
 * {
   box-sizing: border-box;
 }
@@ -15,3 +19,89 @@ body {
   color: $uoc-corporate;
 }
 
+/*------------------------------------*\
+  #IMATGES PERSONATGES
+\*------------------------------------*/
+
+.container img {
+  width: 50%;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+/*------------------------------------*\
+  #Slider
+\*------------------------------------*/
+
+.slider {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  padding: 0%;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 300%;
+  animation: canvi 30s infinite;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 100%;
+  margin-right: 20px;
+}
+
+#img_1 {
+  object-fit: cover;
+}
+
+#img_2 {
+  object-fit: cover;
+}
+
+#img_3 {
+  object-fit: cover;
+}
+
+#img_3 {
+  object-fit: cover;
+}
+
+#img_3 {
+  object-fit: cover;
+}
+
+@keyframes canvi {
+  0% {
+      margin-left: 0;
+  }
+
+  20% {
+      margin-left: 0;
+  }
+
+  25% {
+      margin-left: -100%;
+  }
+
+  45% {
+      margin-left: -100%;
+  }
+
+  50% {
+      margin-left: -200%;
+  }
+
+  70% {
+      margin-left: -200%;
+  }
+}
