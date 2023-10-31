@@ -35,24 +35,21 @@ body {
 
 .slider {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0 auto;
   overflow: hidden;
-  padding: 0%;
 }
 
 .slider ul {
   display: flex;
   padding: 0;
-  width: 300%;
-  animation: canvi 30s infinite;
+  width: 500%;
+  animation: canvi 50s infinite;
 }
 
 .slider li {
-  width: 100%;
+  width: 19%;
   list-style: none;
+  margin-right: 7%;
 }
 
 .slider img {
@@ -60,48 +57,24 @@ body {
   margin-right: 20px;
 }
 
-#img_1 {
-  object-fit: cover;
-}
-
-#img_2 {
-  object-fit: cover;
-}
-
-#img_3 {
-  object-fit: cover;
-}
-
-#img_3 {
-  object-fit: cover;
-}
-
-#img_3 {
+#img_1, #img_2, #img_3, #img_4, #img_5 {
   object-fit: cover;
 }
 
 @keyframes canvi {
-  0% {
+  0%, 20% {
       margin-left: 0;
   }
-
-  20% {
-      margin-left: 0;
+  24%, 40% {
+      margin-left: -101%;
   }
-
-  25% {
-      margin-left: -100%;
+  44%, 60% {
+      margin-left: -202%;
   }
-
-  45% {
-      margin-left: -100%;
+  64%, 80% {
+      margin-left: -303%;
   }
-
-  50% {
-      margin-left: -200%;
-  }
-
-  70% {
-      margin-left: -200%;
+  84%, 100% {
+      margin-left: -404%;
   }
 }
