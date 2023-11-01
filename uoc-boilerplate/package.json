@@ -45,6 +45,7 @@
     "sharp": "0.31.1"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "sass": "^1.69.5"
   }
 }

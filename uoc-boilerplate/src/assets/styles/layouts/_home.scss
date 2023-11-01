@@ -6,18 +6,84 @@
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  padding: 2rem;
-  font-family: $font-family-sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+
+/*------------------------------------*\
+  #Desktop
+\*------------------------------------*/
+
+
+@media screen and (min-width: 1024px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 2rem;
+    text-align: justify;
+    font-family: $font-family-sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: $uoc-bg;
+    color: $uoc-corporate;
+  }
 }
+
+
+
+/*------------------------------------*\
+  #Tablet
+\*------------------------------------*/
+
+@media screen and (min-width:481px) and (max-width: 1023px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    text-align: justify;
+    font-family: $font-family-sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: $uoc-bg;
+    color: $uoc-corporate;
+  }
+
+}
+
+
+/*------------------------------------*\
+  #Mobile
+\*------------------------------------*/
+
+@media screen and (max-width: 480px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: $font-family-sans-serif;
+    background-color: $uoc-bg;
+    color: $uoc-corporate;
+    padding: 1rem; 
+    font-size: 14px; 
+    line-height: 22px;
+  }
+
+  h2, h3, h4, h5, h6 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
 
 /*------------------------------------*\
   #IMATGES PERSONATGES
@@ -80,7 +146,7 @@ body {
 }
 
 /*------------------------------------*\
-  #
+  # Canvi color Background
 \*------------------------------------*/
 
 
