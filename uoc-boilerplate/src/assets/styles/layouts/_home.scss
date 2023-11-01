@@ -17,10 +17,6 @@ body {
   line-height: 24px;
   background-color: $uoc-bg;
   color: $uoc-corporate;
-  background: 
-    url('src/assets/images/barret');
-    background-size: 50px 50px;
-    background-position: center center;
 }
 
 /*------------------------------------*\
@@ -81,4 +77,43 @@ body {
   84%, 100% {
       margin-left: -404%;
   }
+}
+
+/*------------------------------------*\
+  #
+\*------------------------------------*/
+
+
+.character-background-luffy {
+  background-color: $luffy-color;
+}
+.character-background-zoro {
+  background-color: $zoro-color;
+}
+.character-background-nami {
+  background-color: $nami-color;
+}
+.character-background-sanji {
+  background-color: $sanji-color;
+}
+.character-background-ussop {
+  background-color: $ussop-color;
+}
+.character-background-chopper {
+  background-color: $chopper-color;
+}
+.character-background-robin {
+  background-color: $robin-color;
+}
+.character-background-franky {
+  background-color: $franky-color;
+}
+.character-background-brook {
+  background-color: $brook-color;
+}
+.character-background-jinbei {
+  background-color: $jinbei-color;
+}
+.character-background-default {
+  background-color: $default-color;
 }

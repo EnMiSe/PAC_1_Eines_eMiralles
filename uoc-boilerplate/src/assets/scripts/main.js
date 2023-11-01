@@ -10,7 +10,17 @@
  * Write any other JavaScript below
  */
 
-+( function() {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
-} )();
+const buttons = document.querySelectorAll('[data-character]');
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        document.body.classList.forEach(className => {
+            if (className.startsWith('character-background-')) {
+                document.body.classList.remove(className);
+            }
+        });
+        const character = this.getAttribute('data-character');
+        document.body.classList.add(`character-background-${character}`);
+    });
+});
+
+

@@ -3,7 +3,7 @@
 }
 
 body {
-  color: #000078;
+  color: #000007;
   background-color: #d5faff;
   flex-direction: column;
   height: 100vh;
@@ -69,6 +69,50 @@ body {
   84%, 100% {
     margin-left: -404%;
   }
+}
+
+.character-background-luffy {
+  background-color: red;
+}
+
+.character-background-zoro {
+  background-color: green;
+}
+
+.character-background-nami {
+  background-color: orange;
+}
+
+.character-background-sanji {
+  background-color: #ff0;
+}
+
+.character-background-ussop {
+  background-color: brown;
+}
+
+.character-background-chopper {
+  background-color: pink;
+}
+
+.character-background-robin {
+  background-color: purple;
+}
+
+.character-background-franky {
+  background-color: #87ceeb;
+}
+
+.character-background-brook {
+  background-color: gray;
+}
+
+.character-background-jinbei {
+  background-color: #00f;
+}
+
+.character-background-default {
+  background-color: #fff;
 }
 
 body {
