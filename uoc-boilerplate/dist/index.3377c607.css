@@ -30,12 +30,12 @@ nav a {
   box-shadow: 0 0 10px #0003;
 }
 
-img {
+.container img {
   max-width: 100%;
   height: auto;
 }
 
-p {
+.container p {
   font-size: 18px;
   line-height: 1.6;
 }
@@ -55,8 +55,8 @@ p {
 
 @media screen and (min-width: 1024px) {
   body {
-    text-align: justify;
     color: #000007;
+    text-align: justify;
     background-color: #eeefef;
     flex-direction: column;
     height: 100vh;
@@ -70,8 +70,8 @@ p {
 
 @media screen and (min-width: 481px) and (max-width: 1023px) {
   body {
-    text-align: justify;
     color: #000007;
+    text-align: justify;
     background-color: #eeefef;
     flex-direction: column;
     width: 100%;
@@ -85,8 +85,8 @@ p {
 
 @media screen and (max-width: 480px) {
   body {
-    text-align: justify;
     color: #000007;
+    text-align: justify;
     background-color: #eeefef;
     flex-direction: column;
     justify-content: center;
@@ -126,7 +126,7 @@ p {
 }
 
 .slider li {
-  width: 19%;
+  width: 20%;
   margin-right: 7%;
   list-style: none;
 }

@@ -2,28 +2,29 @@
   #GENERAL
 \*------------------------------------*/
 
+
 * {
   box-sizing: border-box;
 }
 
 header {
+  padding: 20px;
   background-color: #007ACC;
   text-align: center;
-  padding: 20px;
 }
 
 
 nav {
+  padding: 10px;
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 10px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 10px;
+  
+  a {
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 .container {
@@ -33,52 +34,51 @@ nav a {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+    img {
+      max-width: 100%;
+      height: auto;
+    }
 
-p {
-  font-size: 18px;
-  line-height: 1.6;
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
 }
 
 .uoc-footer {
+  margin-top: 30px;
   background-color: #333;
   color: #fff;
-  margin-top: 30px;
   text-align: center;
 }
 
 .link-insta a {
-  text-decoration: none;
-  color: #fff;
   margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
 }
+
 
 /*------------------------------------*\
   #Desktop
 \*------------------------------------*/
 
-
 @media screen and (min-width: 1024px) {
 
   body {
-    display: flex;
-    flex-direction: column;
     height: 100vh;
     margin: 0;
-    text-align: justify;
     font-family: $font-family-sans-serif;
     font-size: 16px;
     line-height: 24px;
     background-color: $uoc-bg;
     color: $uoc-corporate;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
   }
 }
-
 
 
 /*------------------------------------*\
@@ -88,16 +88,16 @@ p {
 @media screen and (min-width:481px) and (max-width: 1023px) {
 
   body {
-    display: flex;
-    flex-direction: column;
     height: 100vh;
     width: 100%;
-    text-align: justify;
     font-family: $font-family-sans-serif;
     font-size: 16px;
     line-height: 24px;
     background-color: $uoc-bg;
     color: $uoc-corporate;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
   }
 
 }
@@ -110,18 +110,18 @@ p {
 @media screen and (max-width: 480px) {
 
   body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: $uoc-corporate;
+    font-family: $font-family-sans-serif;
+    background-color: $uoc-bg;
+    font-size: 14px;
+    line-height: 22px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: justify;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    font-family: $font-family-sans-serif;
-    background-color: $uoc-bg;
-    color: $uoc-corporate;
-    font-size: 14px;
-    line-height: 22px;
   }
 
   h2,
@@ -136,7 +136,6 @@ p {
 }
 
 
-
 /*------------------------------------*\
   #IMATGES PERSONATGES
 \*------------------------------------*/
@@ -147,6 +146,7 @@ p {
   margin-left: 25%;
 }
 
+
 /*------------------------------------*\
   #Slider
 \*------------------------------------*/
@@ -155,24 +155,24 @@ p {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-}
-
-.slider ul {
-  display: flex;
-  padding: 0;
-  width: 500%;
-  animation: canvi 50s infinite;
-}
-
-.slider li {
-  width: 19%;
-  list-style: none;
-  margin-right: 7%;
-}
-
-.slider img {
-  width: 100%;
-  margin-right: 20px;
+  
+  ul {
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: canvi 50s infinite;
+  }
+  
+  li {
+    width: 20%;
+    margin-right: 7%;
+    list-style: none;
+  }
+  
+  img {
+    width: 100%;
+    margin-right: 20px;
+  }
 }
 
 #img_1,
@@ -184,7 +184,7 @@ p {
 }
 
 @keyframes canvi {
-
+//Els % dels marges estan adaptats per a la correcte col·locació de les imatges amb la animació
   0%,
   20% {
     margin-left: 0;
@@ -211,10 +211,10 @@ p {
   }
 }
 
+
 /*------------------------------------*\
   # Canvi color Background
 \*------------------------------------*/
-
 
 .character-background-luffy {
   background-color: $luffy-color;
