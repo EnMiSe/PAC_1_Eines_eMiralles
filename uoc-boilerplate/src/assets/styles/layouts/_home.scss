@@ -12,9 +12,6 @@ header {
   padding: 20px;
 }
 
-h1 {
-  font-size: 36px;
-}
 
 nav {
   background-color: #333;
@@ -31,7 +28,7 @@ nav a {
 
 .container {
   max-width: 800px;
-  margin:  10px auto;
+  margin: 10px auto;
   padding: 20px;
   background-color: #fff;
   border-radius: 5px;
@@ -51,9 +48,14 @@ p {
 .uoc-footer {
   background-color: #333;
   color: #fff;
-  margin: 30px;
+  margin-top: 30px;
   text-align: center;
-  padding: 10px;
+}
+
+.link-insta a {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 10px;
 }
 
 /*------------------------------------*\
@@ -68,7 +70,6 @@ p {
     flex-direction: column;
     height: 100vh;
     margin: 0;
-    padding: 2rem;
     text-align: justify;
     font-family: $font-family-sans-serif;
     font-size: 16px;
@@ -91,7 +92,6 @@ p {
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    padding: 2rem;
     text-align: justify;
     font-family: $font-family-sans-serif;
     font-size: 16px;
@@ -120,12 +120,15 @@ p {
     font-family: $font-family-sans-serif;
     background-color: $uoc-bg;
     color: $uoc-corporate;
-    padding: 1rem; 
-    font-size: 14px; 
+    font-size: 14px;
     line-height: 22px;
   }
 
-  h2, h3, h4, h5, h6 {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -172,25 +175,39 @@ p {
   margin-right: 20px;
 }
 
-#img_1, #img_2, #img_3, #img_4, #img_5 {
+#img_1,
+#img_2,
+#img_3,
+#img_4,
+#img_5 {
   object-fit: cover;
 }
 
 @keyframes canvi {
-  0%, 20% {
-      margin-left: 0;
+
+  0%,
+  20% {
+    margin-left: 0;
   }
-  24%, 40% {
-      margin-left: -101%;
+
+  24%,
+  40% {
+    margin-left: -101%;
   }
-  44%, 60% {
-      margin-left: -202%;
+
+  44%,
+  60% {
+    margin-left: -202%;
   }
-  64%, 80% {
-      margin-left: -303%;
+
+  64%,
+  80% {
+    margin-left: -303%;
   }
-  84%, 100% {
-      margin-left: -404%;
+
+  84%,
+  100% {
+    margin-left: -404%;
   }
 }
 
@@ -202,33 +219,43 @@ p {
 .character-background-luffy {
   background-color: $luffy-color;
 }
+
 .character-background-zoro {
   background-color: $zoro-color;
 }
+
 .character-background-nami {
   background-color: $nami-color;
 }
+
 .character-background-sanji {
   background-color: $sanji-color;
 }
+
 .character-background-ussop {
   background-color: $ussop-color;
 }
+
 .character-background-chopper {
   background-color: $chopper-color;
 }
+
 .character-background-robin {
   background-color: $robin-color;
 }
+
 .character-background-franky {
   background-color: $franky-color;
 }
+
 .character-background-brook {
   background-color: $brook-color;
 }
+
 .character-background-jinbei {
   background-color: $jinbei-color;
 }
+
 .character-background-default {
   background-color: $default-color;
 }
