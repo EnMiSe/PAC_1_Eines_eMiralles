@@ -1,6 +1,15 @@
-{ "extends": ["stylelint-config-standard"],
-"[scss]": {
+{ 
+    "extends": ["stylelint-config-standard"],
+    "[scss]": {
     "editor.defaultFormatter": "stylelint.vscode-stylelint"
+    },
+    "plugins": ["stylelint-scss"],
+    "rules": {
+        "scss/at-rule-no-unknown": true,
+        "scss/dollar-variable-pattern": "^[_]?[a-z]+([a-z0-9-]+[a-z0-9]+)?$",
+        "scss/selector-no-redundant-nesting-selector": true,
+        "scss/no-duplicate-dollar-variables": true,
+        "scss/no-duplicate-mixins": true
     }
 }
 
