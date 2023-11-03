@@ -2,10 +2,16 @@
   box-sizing: border-box;
 }
 
-header {
+.header {
   text-align: center;
   background-color: #007acc;
   padding: 20px;
+}
+
+.header__img {
+  min-width: 20%;
+  max-width: 40%;
+  min-height: auto;
 }
 
 .navSec {
@@ -88,6 +94,17 @@ header {
 }
 
 @media screen and (min-width: 481px) and (max-width: 1023px) {
+  .header {
+    text-align: center;
+    background-color: #007acc;
+    padding: 20px;
+  }
+
+  .header__img {
+    min-width: 60%;
+    min-height: auto;
+  }
+
   body {
     color: #000007;
     text-align: justify;
@@ -103,6 +120,17 @@ header {
 }
 
 @media screen and (max-width: 480px) {
+  .header {
+    text-align: center;
+    background-color: #007acc;
+    padding: 20px;
+  }
+
+  .header__img {
+    min-width: 70%;
+    min-height: auto;
+  }
+
   body {
     color: #000007;
     text-align: justify;

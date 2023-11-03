@@ -42,10 +42,17 @@ Configuració per al "set up" del canvi de color per mitjà dels botons.
   box-sizing: border-box;
 }
 
-header {
+.header {
   padding: 20px;
   background-color: #007ACC;
   text-align: center;
+
+  &__img{
+    max-width: 40%;
+    min-height: auto;
+    min-width: 20%;
+    min-height: auto;
+  }
 }
 
 .navSec {
@@ -142,6 +149,17 @@ header {
 
 @media screen and (min-width:481px) and (max-width: 1023px) {
 
+  .header {
+    padding: 20px;
+    background-color: #007ACC;
+    text-align: center;
+  
+    &__img{
+      min-width: 60%;
+      min-height: auto;
+    }
+  }
+
   body {
     height: 100vh;
     width: 100%;
@@ -163,6 +181,17 @@ header {
 \*------------------------------------*/
 
 @media screen and (max-width: 480px) {
+
+  .header {
+    padding: 20px;
+    background-color: #007ACC;
+    text-align: center;
+  
+    &__img{
+      min-width: 70%;
+      min-height: auto;
+    }
+  }
 
   body {
     height: 100%;
