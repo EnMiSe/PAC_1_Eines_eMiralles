@@ -1,7 +1,42 @@
+/**
+INDEX SECCIONS
+
+#GENERAL (Secció on s'apliquen els estils generals de la web)
+*.................Configuració del box-sizing
+header............Estils header
+navSec............Estils del navegador que redirigeix a les diferents seccions de la web.
+navPer............Estils amb la configuració de la secció de canvi de color del background.
+container.........Estils generals per als contenidors dels textos i imatges.
+uoc-footer........Estils per al footer.
+link-insta........Estils per al link del footer que redirigeix a la pàgina de One Piece a Instagram.
+*
+
+#DESKTOP
+body..............Configuració per a desktop del body de la web.
+*
+
+#TABLET
+body..............Configuració per a desktop del body de la web.
+*
+
+#MOBILE
+body..............Configuració per a desktop del body de la web.
+*
+
+#SLIDER
+slider............Configuració i estils per al slider amb imatges de la web.
+*
+
+#CANVI COLOR BACKGROUND
+Configuració per al "set up" del canvi de color per mitjà dels botons.
+*
+
+**/
+
+
 /*------------------------------------*\
   #GENERAL
 \*------------------------------------*/
-
 
 * {
   box-sizing: border-box;
@@ -13,19 +48,32 @@ header {
   text-align: center;
 }
 
-
-nav {
+.navSec {
   padding: 10px;
   background-color: #333;
   color: #fff;
   text-align: center;
   
-  a {
+  &__a {
     margin: 10px;
     color: #fff;
     text-decoration: none;
   }
 }
+
+.navPer {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  
+  &__button {
+    margin: 10px;
+    color: #030303;
+    text-decoration: none;
+  }
+}
+
 
 .container {
   max-width: 800px;
@@ -35,16 +83,23 @@ nav {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
-    img {
+    &__img {
       max-width: 100%;
       height: auto;
     }
 
-    p {
+    &__p {
       font-size: 18px;
       line-height: 1.6;
     }
+
+    img {
+      width: 50%;
+      margin-right: 25%;
+      margin-left: 25%;
+    }
 }
+
 
 .uoc-footer {
   margin-top: 30px;
@@ -61,7 +116,7 @@ nav {
 
 
 /*------------------------------------*\
-  #Desktop
+  #DESKTOP
 \*------------------------------------*/
 
 @media screen and (min-width: 1024px) {
@@ -82,7 +137,7 @@ nav {
 
 
 /*------------------------------------*\
-  #Tablet
+  #TABLET
 \*------------------------------------*/
 
 @media screen and (min-width:481px) and (max-width: 1023px) {
@@ -104,7 +159,7 @@ nav {
 
 
 /*------------------------------------*\
-  #Mobile
+  #MOBILE
 \*------------------------------------*/
 
 @media screen and (max-width: 480px) {
@@ -122,33 +177,18 @@ nav {
     flex-direction: column;
     justify-content: center;
     text-align: justify;
-  }
 
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    h2 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 
 
 /*------------------------------------*\
-  #IMATGES PERSONATGES
-\*------------------------------------*/
-
-.container img {
-  width: 50%;
-  margin-right: 25%;
-  margin-left: 25%;
-}
-
-
-/*------------------------------------*\
-  #Slider
+  #SLIDER
 \*------------------------------------*/
 
 .slider {
@@ -156,15 +196,15 @@ nav {
   margin: 0 auto;
   overflow: hidden;
   
-  ul {
+  &__ul {
     display: flex;
     padding: 0;
     width: 500%;
     animation: canvi 50s infinite;
   }
   
-  li {
-    width: 20%;
+  &__ul__li {
+    width: 60%;
     margin-right: 7%;
     list-style: none;
   }
@@ -175,13 +215,6 @@ nav {
   }
 }
 
-#img_1,
-#img_2,
-#img_3,
-#img_4,
-#img_5 {
-  object-fit: cover;
-}
 
 @keyframes canvi {
 //Els % dels marges estan adaptats per a la correcte col·locació de les imatges amb la animació
@@ -213,7 +246,7 @@ nav {
 
 
 /*------------------------------------*\
-  # Canvi color Background
+  #CANVI COLOR BACKGROUND
 \*------------------------------------*/
 
 .character-background-luffy {

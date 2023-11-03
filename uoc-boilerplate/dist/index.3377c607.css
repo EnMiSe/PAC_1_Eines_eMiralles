@@ -8,15 +8,28 @@ header {
   padding: 20px;
 }
 
-nav {
+.navSec {
   color: #fff;
   text-align: center;
   background-color: #333;
   padding: 10px;
 }
 
-nav a {
+.navSec__a {
   color: #fff;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.navPer {
+  color: #fff;
+  text-align: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+.navPer__button {
+  color: #030303;
   margin: 10px;
   text-decoration: none;
 }
@@ -30,14 +43,20 @@ nav a {
   box-shadow: 0 0 10px #0003;
 }
 
-.container img {
+.container__img {
   max-width: 100%;
   height: auto;
 }
 
-.container p {
+.container__p {
   font-size: 18px;
   line-height: 1.6;
+}
+
+.container img {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .uoc-footer {
@@ -99,17 +118,11 @@ nav a {
     display: flex;
   }
 
-  h2, h3, h4, h5, h6 {
+  body h2 {
     justify-content: center;
     width: 100%;
     display: flex;
   }
-}
-
-.container img {
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
 }
 
 .slider {
@@ -118,15 +131,15 @@ nav a {
   overflow: hidden;
 }
 
-.slider ul {
+.slider__ul {
   width: 500%;
   padding: 0;
   animation: 50s infinite canvi;
   display: flex;
 }
 
-.slider li {
-  width: 20%;
+.slider__ul__li {
+  width: 60%;
   margin-right: 7%;
   list-style: none;
 }
@@ -134,10 +147,6 @@ nav a {
 .slider img {
   width: 100%;
   margin-right: 20px;
-}
-
-#img_1, #img_2, #img_3, #img_4, #img_5 {
-  object-fit: cover;
 }
 
 @keyframes canvi {
