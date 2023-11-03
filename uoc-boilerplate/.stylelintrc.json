@@ -1,1 +1,6 @@
-{ "extends": ["stylelint-config-standard"] }
+{ "extends": ["stylelint-config-standard"],
+"[scss]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+    }
+}
+
